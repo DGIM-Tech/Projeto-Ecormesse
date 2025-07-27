@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Sobre{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 text-start"> <!-- alinhamento à esquerda -->
+      <h1 class="mb-4 fw-bold">Seja bem-vindo à página Sobre</h1>
+      <p class="lead text-secondary mb-5">
+        Aqui você encontra informações sobre nossa loja, missão, valores e equipe dedicada a oferecer o melhor para você.
+      </p>
+
+      <div class="card shadow-sm border-0">
+        <div class="card-body">
+          <section class="mb-4">
+            <h4 class="fw-semibold text-primary">🎯 Nossa Missão</h4>
+            <p>
+              Oferecer produtos de alta qualidade com atendimento excepcional, garantindo satisfação e confiança aos nossos clientes.
+            </p>
+          </section>
+
+          <section class="mb-4">
+            <h4 class="fw-semibold text-primary">👥 Nossa Equipe</h4>
+            <p>
+              Contamos com profissionais qualificados, apaixonados pelo que fazem e sempre prontos para ajudar você.
+            </p>
+          </section>
+
+          <section>
+            <h4 class="fw-semibold text-primary">📞 Contato</h4>
+            <p>
+              Tem dúvidas? Entre em contato conosco pelo formulário da página <a href="{% url 'lojaapp:contato' %}">Contato</a>. Estamos sempre à disposição!
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
